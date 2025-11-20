@@ -1,7 +1,7 @@
 package library.main.library;
 
 import javafx.fxml.FXML;
-import library.main.library.application.LibraryController;
+import library.main.library.LibraryController;
 
 import java.io.IOException;
 

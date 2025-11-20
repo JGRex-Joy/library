@@ -1,4 +1,4 @@
-package library.main.library.application;
+package library.main.library;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.ButtonType;
@@ -20,7 +20,7 @@ public class EditBook {
     public EditBook() {
         Dialog<String> dialog = new Dialog<>();
         dialog.setTitle("Edit Book");
-        dialog.setHeaderText("Edit book");
+        dialog.setHeaderText("Edit Book");
 
         ButtonType confirm = new ButtonType("Edit");
         dialog.getDialogPane().getButtonTypes().add(confirm);
@@ -58,7 +58,7 @@ public class EditBook {
 
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == confirm) {
-                return author.getText() + ";" + title.getText() + ";" + isbn.getText() + ";" + category.getText();
+                return author.getText() + " | " + title.getText() + " | " + isbn.getText() + " | " + category.getText();
             }
             return null;
         });
