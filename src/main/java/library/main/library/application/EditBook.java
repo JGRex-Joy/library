@@ -1,4 +1,4 @@
-package library.main.librarymanagementsystem.application;
+package library.main.library.application;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.ButtonType;

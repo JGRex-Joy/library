@@ -1,4 +1,4 @@
-package library.main.librarymanagementsystem.application;
+package library.main.library.application;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -7,7 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import library.main.librarymanagementsystem.HelloApplication;
+import library.main.library.HelloApplication;
 
 import java.io.*;
 import java.net.URL;

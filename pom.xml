@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>library.main</groupId>
-    <artifactId>Library-Management-System</artifactId>
+    <artifactId>library</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Library Management System</name>
 
@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                library.main.librarymanagementsystem/library.main.librarymanagementsystem.HelloApplication
+                                library.main.librarymanagementsystem/library.main.library.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

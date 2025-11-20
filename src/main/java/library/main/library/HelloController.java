@@ -1,8 +1,7 @@
-package library.main.librarymanagementsystem;
+package library.main.library;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import library.main.librarymanagementsystem.application.LibraryController;
+import library.main.library.application.LibraryController;
 
 import java.io.IOException;
 
