@@ -1,6 +1,7 @@
-package library.main.library;
+package library.main.library.controllers;
 
 import javafx.fxml.FXML;
+
 import java.io.IOException;
 
 public class HelloController {

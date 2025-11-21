@@ -6,7 +6,7 @@
 <AnchorPane prefWidth="400" prefHeight="350"
             xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="library.main.library.RegisterController">
+            fx:controller="library.main.library.controllers.RegisterController">
 
     <children>
         <Label text="Register" layoutX="160" layoutY="30" />

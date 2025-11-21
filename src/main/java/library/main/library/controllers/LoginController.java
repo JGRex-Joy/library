@@ -1,4 +1,4 @@
-package library.main.library;
+package library.main.library.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -6,6 +6,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import library.main.library.database.Database;
+import library.main.library.HelloApplication;
+import library.main.library.models.Session;
 
 import java.io.IOException;
 import java.sql.SQLException;

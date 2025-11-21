@@ -1,7 +1,8 @@
-package library.main.library;
+package library.main.library.database;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import library.main.library.models.Book;
 
 import java.sql.*;
 

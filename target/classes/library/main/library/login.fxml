@@ -6,7 +6,7 @@
 <AnchorPane prefWidth="400" prefHeight="300"
             xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="library.main.library.LoginController">
+            fx:controller="library.main.library.controllers.LoginController">
 
     <children>
         <Label text="Login" layoutX="170" layoutY="30" />

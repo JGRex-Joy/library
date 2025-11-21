@@ -1,4 +1,4 @@
-package library.main.library;
+package library.main.library.models;
 
 public class Book {
     private String author;

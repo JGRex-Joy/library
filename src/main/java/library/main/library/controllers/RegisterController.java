@@ -1,4 +1,4 @@
-package library.main.library;
+package library.main.library.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -6,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import library.main.library.database.Database;
+import library.main.library.HelloApplication;
 
 import java.sql.SQLException;
 
@@ -22,11 +24,11 @@ public class RegisterController {
         String c = confirmPasswordField.getText().trim();
 
         if (u.isEmpty() || p.isEmpty()) {
-            showError("Validation", "Username and password required.");
+            showError("Validation", "Username and password required");
             return;
         }
         if (!p.equals(c)) {
-            showError("Validation", "Passwords do not match.");
+            showError("Validation", "Passwords do not match");
             return;
         }
 
@@ -36,7 +38,7 @@ public class RegisterController {
                 Alert a = new Alert(Alert.AlertType.INFORMATION);
                 a.setTitle("Success");
                 a.setHeaderText(null);
-                a.setContentText("Account created. Please login.");
+                a.setContentText("Account created. Please login");
                 a.showAndWait();
 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/main/library/register.fxml"
@@ -44,7 +46,7 @@ public class RegisterController {
                 Scene scene = new Scene(loader.load());
                 HelloApplication.getPrimaryStage().setScene(scene);
             } else {
-                showError("Register failed", "Username already exists.");
+                showError("Register failed", "Username already exists");
             }
         } catch (SQLException e) {
             e.printStackTrace();
