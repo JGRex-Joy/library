@@ -40,7 +40,7 @@ library-management-system/
     └── main/
         ├── java/
         │   │
-        │   ├── module-info.java
+        │   ├── module-info.java                    # Java module configuration
         │   │
         │   └── library.main.library/
         │       ├── controllers/
@@ -52,12 +52,10 @@ library-management-system/
         │       │   └── Database.java               # SQLite connection & initialization
         │       │
         │       ├── models/
-        │       │   ├── Book.java                   # Application entry point
-        │       │   └── Session.java       
+        │       │   ├── Book.java                   # TableView class
+        │       │   └── Session.java                # User ID
         │       │
-        │       ├── MainApp.java
-        │       │  
-        │       └── module-info.java                # Java module configuration
+        │       └── MainApp.java                    # Application entry point 
         │
         └── resources/
             └── library.main.library/               # FXML UI layouts & styles
