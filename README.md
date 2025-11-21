@@ -1,25 +1,25 @@
-# 📚 Library Management System (JavaFX + SQLite)
+# Library Management System (JavaFX + SQLite)
 A simple Library Management System built with JavaFX, using SQLite as a database.
 The system allows users to register, log in, and manage their personal book collection (CRUD operations + search).
 
 Final project for OSE & BAP courses with JavaFX, MVC structure, and database integration.
 
-# Authentication
+## Authentication
 - User Registration
 - User Login
 - Password verification
 - User-specific data isolation
-# Book Management (CRUD)
+## Book Management (CRUD)
 - Add new books
 - Edit books
 - Delete books
 - View books belonging only to the logged-in user
 - Real-time search (author/title/isbn/category)
-# UI/UX
+## UI/UX
 - Clean JavaFX interface
 - Alerts for validation, errors, and confirmations
 - Form auto-population on table row selection
-# Technology Stack
+## Technology Stack
 ````
 Component	    Technology
 Language	    Java 17+
