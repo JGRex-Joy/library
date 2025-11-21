@@ -21,11 +21,11 @@ Final project for OSE & BAP courses with JavaFX, MVC structure, and database int
 - Form auto-population on table row selection
 ## Technology Stack
 ````
-Component	    Technology
-Language	    Java 17+
+Component	        Technology
+Language	        Java 17+
 UI Framework	    JavaFX
-Database	    SQLite
-Build Tool	    Maven
+Database	        SQLite
+Build Tool	        Maven
 Architecture	    MVC
 ````
 
