@@ -7,7 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import library.main.library.database.Database;
-import library.main.library.HelloApplication;
+import library.main.library.MainApp;
 import library.main.library.models.Session;
 
 import java.io.IOException;
@@ -40,7 +40,7 @@ public class LoginController {
                 LibraryController controller = loader.getController();
                 controller.setUser(id);
 
-                HelloApplication.getPrimaryStage().setScene(scene);
+                MainApp.getPrimaryStage().setScene(scene);
 
             } else {
                 showError("Login failed", "Invalid username or password.");
@@ -57,7 +57,7 @@ public class LoginController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/main/library/register.fxml"
             ));
             Scene scene = new Scene(loader.load());
-            HelloApplication.getPrimaryStage().setScene(scene);
+            MainApp.getPrimaryStage().setScene(scene);
         } catch (Exception e) {
             e.printStackTrace();
             showError("Navigation error", e.getMessage());

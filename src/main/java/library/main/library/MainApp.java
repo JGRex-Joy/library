@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import library.main.library.database.Database;
 
-public class HelloApplication extends Application {
+public class MainApp extends Application {
 
     private static Stage primaryStage;
 

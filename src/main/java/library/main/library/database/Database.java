@@ -8,7 +8,7 @@ import java.sql.*;
 
 public class Database {
 
-    private static final String URL = "jdbc:sqlite:C:/Users/omurk/Desktop/library/library.db";
+    private static final String URL = "jdbc:sqlite:library.db";
 
     public static Connection connect() throws SQLException {
         return DriverManager.getConnection(URL);

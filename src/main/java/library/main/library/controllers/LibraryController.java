@@ -9,7 +9,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import library.main.library.models.Book;
 import library.main.library.database.Database;
-import library.main.library.HelloApplication;
+import library.main.library.MainApp;
 
 import java.io.IOException;
 import java.net.URL;
@@ -163,9 +163,9 @@ public class LibraryController implements Initializable {
     }
 
     public static void changeScene() throws IOException {
-        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("library.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("library.fxml"));
         Scene scene = new Scene(loader.load());
-        Stage stage = HelloApplication.getPrimaryStage();
+        Stage stage = MainApp.getPrimaryStage();
         stage.setScene(scene);
         stage.show();
     }

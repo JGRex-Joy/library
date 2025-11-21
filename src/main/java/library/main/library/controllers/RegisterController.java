@@ -7,7 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import library.main.library.database.Database;
-import library.main.library.HelloApplication;
+import library.main.library.MainApp;
 
 import java.sql.SQLException;
 
@@ -44,7 +44,7 @@ public class RegisterController {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/main/library/register.fxml"
                 ));
                 Scene scene = new Scene(loader.load());
-                HelloApplication.getPrimaryStage().setScene(scene);
+                MainApp.getPrimaryStage().setScene(scene);
             } else {
                 showError("Register failed", "Username already exists");
             }
@@ -62,7 +62,7 @@ public class RegisterController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/main/library/login.fxml"));
             Scene scene = new Scene(loader.load());
-            HelloApplication.getPrimaryStage().setScene(scene);
+            MainApp.getPrimaryStage().setScene(scene);
         } catch (Exception e) {
             e.printStackTrace();
             showError("Navigation error", e.getMessage());
