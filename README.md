@@ -4,31 +4,32 @@ The system allows users to register, log in, and manage their personal book coll
 
 Final project for OSE & BAP courses with JavaFX, MVC structure, and database integration.
 
-# 🚀 Features
-## 🔐 Authentication
+# Authentication
 - User Registration
 - User Login
 - Password verification
 - User-specific data isolation
-## 📘 Book Management (CRUD)
+# Book Management (CRUD)
 - Add new books
 - Edit books
 - Delete books
 - View books belonging only to the logged-in user
 - Real-time search (author/title/isbn/category)
-## 🎨 UI/UX
+# UI/UX
 - Clean JavaFX interface
 - Alerts for validation, errors, and confirmations
 - Form auto-population on table row selection
-## 🛠 Technology Stack
-Component	Technology
-Language	Java 17+
-UI Framework	JavaFX
-Database	SQLite
-Build Tool	Maven
-Architecture	MVC
+# Technology Stack
+````
+Component	    Technology
+Language	    Java 17+
+UI Framework	    JavaFX
+Database	    SQLite
+Build Tool	    Maven
+Architecture	    MVC
+````
 
-## 📁 Project Structure
+# Project Structure
 ````
 src/main/java/library/main/library/
 |-- MainApp.java
@@ -49,14 +50,14 @@ src/main/resources/library/main/library/
 |-- library.fxml 
 ````
 
-## 🔧 How to Run the Project
-1️⃣ Clone the repository
+# How to Run the Project
+1. Clone the repository
 ```
 git clone <your-repository-url>
 cd library
 ```
 
-2️⃣ Run with Maven
+2. Run with Maven
 ````
 mvn clean javafx:run
 ````
@@ -66,7 +67,7 @@ mvn clean javafx:run
 - Maven installed
 - JavaFX dependencies included in pom.xml
 
-## 📦 Build a JAR (optional)
+## Build a JAR (optional)
 ````
 mvn clean package
 ````
@@ -78,7 +79,7 @@ java -jar target/library-1.0.jar
 
 (Ensure JavaFX runtime modules are added.)
 
-# 🗄 Database Structure
+# Database Structure
 ## users
 ````
 column	    type
@@ -88,49 +89,49 @@ password	TEXT
 ````
 ## books
 ````
-column	type
-id	INTEGER PK
-author	TEXT
-title	TEXT
-isbn	TEXT
+column	    type
+id	        INTEGER PK
+author	    TEXT
+title	    TEXT
+isbn	    TEXT
 category	TEXT
-user_id	INTEGER (FK to users.id)
+user_id	    INTEGER (FK to users.id)
 ````
 
-# 🖼 Screenshots
-### 🔐 Login Screen
+# Screenshots
+### Login Screen
 ![Login Screen](screenshots/login.png)
-### 📝 Register Screen
+### Register Screen
 ![Login Screen](screenshots/register.png)
-### 📚 Library Main Screen (CRUD)
+### Library Main Screen (CRUD)
 ![Login Screen](screenshots/main.png)
 
-# 🧠 How It Works
-## ✔ Login Flow
+# How It Works
+## Login Flow
 - User enters credentials
 - *Database.validateUser()* checks them
 - On success → loads main library UI
 - Loads books ONLY for that user
 
-## ✔ Add Book
+## Add Book
 - User fills form and clicks Add
 - *Database.addBookForUser()* inserts book
 - Table refreshes automatically
 
-## ✔ Edit Book
-- Select row → fields auto-fill
+## Edit Book
+- Select row -> fields auto-fill
 - ISBN locked (stable key)
 - Saved via update query
 
-## ✔ Delete Book
+## Delete Book
 - Confirmation dialog
 - Deletes row from DB
 
-## ✔ Search
+## Search
 - Real-time dynamic SQL LIKE search
 - Works on author/title/isbn/category
 
-# 🔮 Possible Improvements
+# Possible Improvements
 - Hash passwords (BCrypt)
 - Improve UI with custom CSS
 - ISBN validation API
@@ -140,11 +141,11 @@ user_id	INTEGER (FK to users.id)
 - Light/Dark mode toggle
 - Migrate to MySQL/PostgreSQL
 
-# 👤 Author
+# Author
 - Developed by: Amir Omurkulov SCA-24A
 - Tech: JavaFX • SQLite • Maven • MVC • Python • ML • Django
 
-# ⭐ Final Notes
+# Final Notes
 ### This project demonstrates:
 - JavaFX event-driven programming
 - Working with SQLite from Java
