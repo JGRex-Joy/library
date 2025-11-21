@@ -31,23 +31,39 @@ Architecture	    MVC
 
 # Project Structure
 ````
-src/main/java/library/main/library/
-|-- MainApp.java
-|-- controllers/
-|     |-- LibraryController.java
-|     |-- LoginController.java
-|     |-- RegisterController.java
-|-- database/
-|     |-- Database.java
-|-- models/
-|-- Book.java
-|-- Session.java
-````
-````
-src/main/resources/library/main/library/
-|-- login.fxml
-|-- register.fxml
-|-- library.fxml 
+library-management-system/
+│
+├── pom.xml
+├── library.db                                      # SQLite database file
+│
+└── src/
+    └── main/
+        ├── java/
+        │   │
+        │   ├── module-info.java
+        │   │
+        │   └── library.main.library/
+        │       ├── controllers/
+        │       │   ├── LibraryController.java      # Main UI controller (CRUD)
+        │       │   ├── LoginController.java        # Handles login logic
+        │       │   └── RegisterController.java     # Handles user registration
+        │       │
+        │       ├── database/
+        │       │   └── Database.java               # SQLite connection & initialization
+        │       │
+        │       ├── models/
+        │       │   ├── Book.java                   # Application entry point
+        │       │   └── Session.java       
+        │       │
+        │       ├── MainApp.java
+        │       │  
+        │       └── module-info.java                # Java module configuration
+        │
+        └── resources/
+            └── library.main.library/               # FXML UI layouts & styles
+                ├── library.fxml
+                ├── login.fxml
+                └── register.fxml
 ````
 
 # How to Run the Project
