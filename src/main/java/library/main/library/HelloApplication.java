@@ -5,8 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class HelloApplication extends Application {
 
     private static Stage primaryStage;
@@ -16,12 +14,13 @@ public class HelloApplication extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load()); // scene
+    public void start(Stage stage) throws Exception {
+        primaryStage = stage;
 
-        primaryStage = stage; // current stage(primaryStage) is stage
-        stage.setTitle("Hello!");
+        Database.createTables();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/main/library/login.fxml"));
+        Scene scene = new Scene(loader.load());
+        stage.setTitle("Library - Login");
         stage.setScene(scene);
         stage.show();
     }
